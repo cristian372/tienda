@@ -1,0 +1,8 @@
+{%extends "index.html"%}
+{%block content %}
+	<form action="" method="post">
+		{{Producto.as_ul}}
+		{% csrf_token %}
+		<input type="submit" value="Enviar">
+	</form>
+{%endblock%}

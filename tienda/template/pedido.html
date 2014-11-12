@@ -1,0 +1,8 @@
+{%extends "control.html"%}
+{%block content %}
+	<form action="" method="post">
+		{{Pedido.as_ul}}
+		{% csrf_token %}
+		<input type="submit" value="Enviar">
+	</form>
+{%endblock%}

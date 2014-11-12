@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+    <link href="{{STATIC_URL}}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}vendors/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}vendors/select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}vendors/tags/css/bootstrap-tags.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/forms.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <div class="logo">
+	                 {% block title %}
+	                 {% endblock %}
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+	{% block content %}
+	{% endblock %}
+
+    {% block footer %}
+	{% endblock %}
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="{{STATIC_URL}}bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}vendors/form-helpers/js/bootstrap-formhelpers.min.js"></script>
+    <script src="{{STATIC_URL}}vendors/select/bootstrap-select.min.js"></script>
+    <script src="{{STATIC_URL}}vendors/tags/js/bootstrap-tags.min.js"></script>
+    <script src="{{STATIC_URL}}vendors/mask/jquery.maskedinput.min.js"></script>
+    <script src="{{STATIC_URL}}vendors/moment/moment.min.js"></script>
+    <script src="{{STATIC_URL}}vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
+    <link href="{{STATIC_URL}}vendors/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+    <script src="{{STATIC_URL}}vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script> 
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+    <script src="{{STATIC_URL}}js/custom.js"></script>
+    <script src="{{STATIC_URL}}js/forms.js"></script>
+  </body>
+</html>

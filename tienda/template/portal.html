@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block content %}
+    <div id="contenedor_menu">
+        <ul id="menu">
+            <li>
+                <a href="">Inicio</a>
+            </li>
+            <li>
+                <a href="/producto/">Productos</a>
+            </li>
+            <li>
+                <a href="/usuario/registro/">Registro</a>
+            </li>
+            <li>
+                <a href="/pedido/">Pedido</a>
+            </li>
+        </ul>
+        <ul id="submenu">
+            <li>
+               <a href="/producto/listar/">listar</a>
+            </li>
+            <li>
+                <a href="">modificar</a>
+             </li>
+        </ul>
+    </div>
+{% endblock %}

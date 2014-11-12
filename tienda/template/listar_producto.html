@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block content %}
+        <div class="contenedor">
+            <ul>
+                {% for i in pro %}
+                    <li><a href="/user/perfil/">{{ i.nombre}}</a> </li>
+                {% endfor %}
+            </ul>
+        </div>
+{% endblock %}
